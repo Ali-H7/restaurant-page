@@ -1,7 +1,29 @@
+import './style.css';
 import { homePage } from "./homepage";
-import { contactUs } from "./contact-us";
 import { menu } from "./menu";
+import { contactUs } from "./contact-us";
 
-// homePage();
+
+homePage();
 // contactUs();
-menu();
+// menu();
+
+const content = document.querySelector("#content"); 
+const homeBtn = document.querySelector("#home-button"); 
+const menuBtn = document.querySelector("#menu-button");
+const contactBtn = document.querySelector("#contact-us-button");
+
+homeBtn.addEventListener("click", () => {
+    content.innerHTML = ""; 
+    homePage();
+});
+
+menuBtn.addEventListener("click", () => {
+    content.innerHTML = ""; 
+    menu();
+});
+
+contactBtn.addEventListener("click", () => {
+    content.innerHTML = ""; 
+    contactUs();
+});

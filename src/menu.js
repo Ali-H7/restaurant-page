@@ -10,11 +10,15 @@ export function menu() {
     const content = document.querySelector("#content");
     const text1 = document.createElement("h1");
     const div = document.createElement("div");
+    const menuDiv = document.createElement("div");
 
+    menuDiv.classList.add("menu");
+    div.classList.add("cards");
     text1.textContent = "Our Menu";
-
-    content.appendChild(text1);
-    content.appendChild(div); 
+    
+    content.appendChild(menuDiv)
+    menuDiv.appendChild(text1);
+    menuDiv.appendChild(div); 
     
 
     const card1 = document.createElement("div");

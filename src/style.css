@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: "Roboto";
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: #14213d;
+  color: #ffffff;
+
+}
+
+header {
+    background-color: #fca311;
+    color: #000;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0 15vw;
+}
+
+.logo {
+    font-size: 4.2rem;
+}
+
+ul {
+    display: flex;
+    gap: 4rem
+}
+
+ul > button {
+    all:unset;
+    font-size: 2.2rem;
+}
+
+/* homepage */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15vw;
+    margin-top: 15vh;
+    gap: 2rem;
+    font-size: 2.8rem;
+    position: relative;
+}
+
+.homepage > p {
+    width: 40vw;
+}
+
+.homepage > h1 {
+    width: 40vw;
+    color: #fca311;
+}
+
+.homepage > div {
+    display: flex;
+    gap: 3rem; 
+}
+
+.pizza {
+    position: absolute;
+    z-index: 0;
+    left: 83rem;
+    top: -5rem;
+    box-sizing: content-box;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+}
+
+.homepage > div > button , .cards > div > button{
+    height: 5rem;
+    width: 18rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: #fca311;
+    border: 1px solid #fca211de;
+    margin-top: 2rem;
+}
+
+.homepage > div > button:last-child {
+    background-color: white;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.menu > h1 {
+    font-size: 4.8rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+div > img {
+    width: auto;
+    height: 30rem;
+    border-radius: 3rem;
+}
+
+.cards > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    gap: 1rem;
+    
+}
