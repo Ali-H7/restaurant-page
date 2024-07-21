@@ -19,7 +19,7 @@ export function homePage() {
     
 
     text1.textContent = "Now taking online orders";
-    text2.textContent = "A Slice of Heaven: The Best Pizza in Town!";
+    text2.textContent = "A Slice of Delight: The Best Pizza in Town!";
     text3.textContent = "Welcome to our pizza place, where we serve the most delicious and mouthwatering pizzas in town. Our carefully crafted pizzas are made with love and the finest ingredients, ensuring a delightful experience with every bite. Whether you're a fan of classic flavors or looking for unique combinations, we have something to satisfy every pizza lover's cravings.";
     orderButton.textContent = "Order Now";
     menuButton.textContent = "View Our Menu";

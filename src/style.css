@@ -19,12 +19,13 @@ body {
   font-size: 1.6rem;
   background-color: #14213d;
   color: #ffffff;
+  background: url(background.jpg);
 
 }
 
 header {
     background-color: #fca311;
-    color: #000;
+    color: #0d1629;
 }
 
 header > div {
@@ -37,6 +38,7 @@ header > div {
 
 .logo {
     font-size: 4.2rem;
+    cursor: pointer;
 }
 
 ul {
@@ -47,6 +49,7 @@ ul {
 ul > button {
     all:unset;
     font-size: 2.2rem;
+    cursor: pointer;
 }
 
 /* homepage */
@@ -56,7 +59,7 @@ ul > button {
     flex-direction: column;
     justify-content: center;
     margin: 0 15vw;
-    margin-top: 15vh;
+    margin-top: 13vh;
     gap: 2rem;
     font-size: 2.8rem;
     position: relative;
@@ -80,7 +83,7 @@ ul > button {
     position: absolute;
     z-index: 0;
     left: 83rem;
-    top: -5rem;
+    top: -3rem;
     box-sizing: content-box;
     height: auto;
     width: auto;
@@ -95,6 +98,7 @@ ul > button {
     background-color: #fca311;
     border: 1px solid #fca211de;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .homepage > div > button:last-child {
@@ -136,4 +140,67 @@ div > img {
     border-radius: 2.5rem;
     gap: 1rem;
     
+}
+
+/* contact-us */
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    font-size: 2.8rem;
+    line-height: 1.5;
+}
+
+.contact-us > div:first-child {
+    margin-left: 15vw;
+}
+
+.contact-us > div > div > h1, .contact-us > div > div > h4 {
+    color: #fca311;
+}
+
+.contact-us > div > div > p {
+    width: 75%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: #fca311;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    width: 55rem;
+    border-radius: 1rem;
+    margin-right: 7.5vw;
+}
+
+input, textarea {
+    height: 5rem;
+    width: 45rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    font-size: 1.6rem;
+}
+
+textarea {
+    height: 20rem;
+}
+
+input:focus, textarea:focus {
+    outline: solid 2px #14213d; 
+}
+
+form > button {
+    width: 45rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: 1px solid #fca211de;
+    cursor: pointer;
+    font-size: 1.6rem;
 }
